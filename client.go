@@ -11,8 +11,6 @@ const DefaultRestUrl string = "http://127.0.0.1:8697"
 type Client struct {
 	HttpClient *http.Client
 	ApiKey     string
-	Host       string
-	Base       string
 }
 
 func NewClient(apiKey string) *Client {
