@@ -12,13 +12,10 @@ const VmsUrl string = DefaultRestUrl + "/vms"
 type Vm struct {
 	Id     string `json:"id"`
 	Path   string `json:"path"`
-	Cpu    string `json:"cpu"`
-	Memory string `json:"memory"`
 }
 
 type NewVm struct {
-	Cpu      string `json:"cpu"`
-	Memory   string `json:"memory"`
+	Name     string `json:"name"`
 	ParentId string `json:"parent_id"`
 }
 
